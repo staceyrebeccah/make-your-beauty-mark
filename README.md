@@ -1,2 +1,2 @@
-# Make Your Beauty Mark website design
+# Make Your Beauty Mark
 Fully responsive website design and development, using HTML, CSS, Bootstrap and Javascript.

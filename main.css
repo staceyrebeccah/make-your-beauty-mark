@@ -18,7 +18,7 @@
 
 @font-face {
   font-family: 'edo' !important;
-  src: url('../fonts/edo/edo.ttf') format('truetype'); /* Safari, Android, iOS */
+  src: url('edo.ttf') format('truetype'); /* Safari, Android, iOS */
 }
 
 h1, h2, h3, h4 {

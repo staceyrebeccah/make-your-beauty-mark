@@ -1,0 +1,291 @@
+
+/* general */
+
+* {
+    outline: none;
+} 
+
+.margin {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.container {
+    width: 70%;
+}
+
+/* typography and font */
+
+@font-face {
+  font-family: 'edo' !important;
+  src: url('../fonts/edo/edo.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
+h1, h2, h3, h4 {
+    font-family: 'edo', sans-serif !important;
+    color: black !important;
+}
+
+/* general styling */
+
+.heading h2 {
+    background-color: #6C09D4;
+    padding: 1.5rem;
+    color: white !important;
+}
+
+.fa-li {
+    color: #6C09D4;
+}
+
+button {
+    border-radius: 25px !important;
+    padding: 10px !important;
+    color: #973BF6 !important;
+    border-color: #973BF6 !important;
+    border-width: 1.5px !important;
+}
+
+button:hover {
+    color: white !important;
+    background-color: #973BF6 !important;
+}
+
+
+/* backgrounds */
+
+.background-image {
+    background-image: url("../assets/hero-image-blank.jpg");
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 420px;
+}
+
+#logo {
+    display: flex;
+    margin: 0 auto;
+    width: 240px;
+    height: 240px;
+    margin-top: 3rem;
+}
+
+.hero-text {
+    font-family: 'edo', 'nunito';
+    text-align: center;
+    color: white;
+    background: #FC04A7;
+}
+
+.background-image2 {
+    background-image: url("../assets/background-image2.jpg");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    min-height: 350px;
+    opacity: 0.45;
+}
+
+.background-gradient, .background-gradient2 {
+    background: linear-gradient(160deg, blue, #FC04A7);
+}
+
+.background-image3 {
+    background-image: url("../assets/background-image3.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 350px;
+    opacity: 0.45;
+}
+
+/* navigation */
+
+nav {
+	height: 3.5rem !important;
+    background-color: rgba(0,0,0,0.0) !important; 
+    padding: 50px 20px 50px 20px;
+}
+
+nav a {
+	font-family: 'edo', sans-serif;
+    padding: 12px;
+    color: white !important;
+}
+
+nav ul li {
+	text-align: right;
+}
+
+.navbar-toggler {
+    border-radius: 50% !important;
+    padding: 10px 10px 10px 10px !important;
+    background-color: none !important;
+    border-color: white !important;
+    border-width: 2px !important;
+    color: white !important;
+    font-weight: bold;
+}
+
+.navbar:hover {
+    color: white !important;
+}
+
+
+/* about - "Helping businesses with their online beauty presence" */
+
+.about {
+    width: 100%;
+    padding: 2rem;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+    .col1 {
+        width: 100%;
+        padding: 2rem;
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+    }
+
+    .col2 {
+        width: 100%;
+        padding: 2rem;
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+    }
+
+/* what we do */
+
+.packages img {
+    width: 90px;
+    height: 90px;
+}
+
+.packages {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr (auto, 3);
+}
+
+    .package1 {
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+        padding: 2rem;
+
+    }
+
+    .package2 {
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+        padding: 2rem;
+    }
+
+    .package3 {
+        grid-row: 1 / 2;
+        grid-column: 3 / 4;
+        padding: 2rem;
+
+    }
+
+
+/* contact form */
+
+.contact {
+    background-color: #6C09D4;
+    color: white;
+}
+
+form li {
+    width: 100%;
+    list-style: none;
+}
+
+form ul {
+    margin-bottom: auto;
+}
+
+.form-row {
+  display: flex;
+  width: 70%;
+  justify-content: flex-end;
+}
+
+.input-label {
+    padding: 1.5rem;
+    float: left !important;
+}
+
+#name, #email, #message {
+    width: 50%;
+    background-color: #6C09D4;
+    color: white !important;
+    padding: 10px !important;
+    border-color: white !important;
+    border-radius: 5px !important;
+    border-width: 1.5px !important;
+    border-style: solid !important;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+#message {
+    height: 130px;
+}
+
+
+.submit {
+    width: 9rem !important;
+    border-radius: 25px !important;
+    margin-bottom: 3rem;
+    background-color: #853EF1 !important;
+    border-color: white !important;
+    border-width: 1.5px !important;
+    color: white !important;
+}
+
+/* footer */
+
+footer {
+    font-size: 0.8rem;
+}
+
+/* media query for smaller screens e.g. phones or tablets */
+
+@media only screen and (max-width: 760px) {
+
+    .navbar-collapse {
+        background-color: #853EF1;
+    }
+
+    #logo {
+        margin-top: 3.5rem;
+        width: 200px;
+        height: 200px;
+    }
+
+    /* one column layout for content areas */
+
+    .about {
+        display: inherit;
+    }
+
+    .packages {
+        display: inherit;
+    }
+
+    .col1 {
+        padding-bottom: 0rem;
+    }
+
+    .col2 {
+        padding-top: 0rem;
+        padding-bottom: 4rem;
+    }
+
+}
